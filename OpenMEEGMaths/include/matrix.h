@@ -65,12 +65,6 @@ namespace OpenMEEG {
 
         double* data() const { return value.get(); }
 
-    #ifdef SWIGPYTHON
-        /// \brief Get a shared pointer on the Matrix data.
-        
-        std::shared_ptr<double[]> get_shared_data_ptr() { return value; }
-    #endif
-
         /// \brief Get Matrix value
         /// \return value in Matrix
 
